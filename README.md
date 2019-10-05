@@ -12,10 +12,10 @@ PaperScissorsRock (PSR) is a hand-game of symbols where you can play versus the 
 5. Game can be compiled as a standalone static library (.a)
     * It can be linked to executables using the IGameController inerface, just provide the dependencies (constructor inputs)
 6. Project has been compiled using CMake on a GNU/Linux environment
-    * If CMake is not available, I have written a manual ./tools/Make/Makefile which just requires GNU Make. However, it is only for src codes, because test codes require googletest library which I have linked specifically through CMake only.
+    * If CMake is not available, I have written a manual ./Tools/Make/Makefile which just requires GNU Make. However, it is only for src codes, because test codes require googletest library which I have linked specifically through CMake only.
     * Compilation on other operating systems (Windows, Mac, etc.) or through IDE has not been tried, might need more setup
 7. Optional: When running tests, I wrote a script to display the target testcase.
-    * Script is in ./tools/GoogleTestResultReader/readgtest
+    * Script is in ./Tools/GoogleTestResultReader/readgtest
 8. There are 2 options available when running the compiled ./build/src/psr_src particularly --help and --play
 9. Classes and files that are either straight forward (ex. those returning const values) or just controls the flow (Controller files) are not tested to avoid creating change-detector tests (tests that do not test logic but rather tests what you have written on the src code line by line).
 
@@ -54,7 +54,7 @@ make
 Using GNU Make only
 ~~~
 cd PaperScissorsRockGame
-cp tools/Make/Makefile .
+cp Tools/Make/Makefile .
 make
 ~~~
 
@@ -80,9 +80,9 @@ build/test/psr_test
 To display result of specific testcase
 ~~~
 cd PaperScissorsRockGame
-tools/GoogleTestResultReader/readgtest build/test/psr_test
-tools/GoogleTestResultReader/readgtest build/test/psr_test --all
-tools/GoogleTestResultReader/readgtest build/test/psr_test --test TestName
+Tools/GoogleTestResultReader/readgtest build/test/psr_test
+Tools/GoogleTestResultReader/readgtest build/test/psr_test --all
+Tools/GoogleTestResultReader/readgtest build/test/psr_test --test TestName
 ~~~
 
 ## EXAMPLE RUN
@@ -1011,7 +1011,7 @@ nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/b
 [==========] 14 tests from 4 test suites ran. (7 ms total)
 [  PASSED  ] 14 tests.
 nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ ../tools/GoogleTestResultReader/readgtest test/psr_test --test RandomGene
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ ../Tools/GoogleTestResultReader/readgtest test/psr_test --test RandomGene
 [----------] 5 tests from RandomGeneratorTest
 [ RUN      ] RandomGeneratorTest.DecideOnCasesThatShouldBeYes
 [       OK ] RandomGeneratorTest.DecideOnCasesThatShouldBeYes (0 ms)
