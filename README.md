@@ -1,4 +1,4 @@
-PaperScissorsRock
+PaperScissorsRockGame
 
 ## PURPOSE
 PaperScissorsRock (PSR) is a hand-game of symbols where you can play versus the computer. Some of the features:
@@ -46,14 +46,14 @@ PaperScissorsRock (PSR) is a hand-game of symbols where you can play versus the 
 ## BUILDING
 Using CMake
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 mkdir -p build && cd build
 cmake ..
 make
 ~~~
 Using GNU Make only
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 cp tools/Make/Makefile .
 make
 ~~~
@@ -61,25 +61,25 @@ make
 ## RUNNING
 Using CMake
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 build/src/psr_src --help
 build/src/psr_src --play
 ~~~
 Using GNU Make only
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 bin_manual/a.out --help
 bin_manual/a.out --play
 ~~~
 
 ## TESTING
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 build/test/psr_test
 ~~~
 To display result of specific testcase
 ~~~
-cd PaperScissorsRock
+cd PaperScissorsRockGame
 tools/GoogleTestResultReader/readgtest build/test/psr_test
 tools/GoogleTestResultReader/readgtest build/test/psr_test --all
 tools/GoogleTestResultReader/readgtest build/test/psr_test --test TestName
@@ -88,22 +88,22 @@ tools/GoogleTestResultReader/readgtest build/test/psr_test --test TestName
 ## EXAMPLE RUN
 ~~~
 nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs$ cd PaperScissorsRock/
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock$ mkdir build
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock$ cd build/
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ cmake ..
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs$ cd PaperScissorsRockGame/
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame$ mkdir build
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame$ cd build/
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ cmake ..
 ... trimmed prints ...
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ make
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ make
 ... trimmed prints ...
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ src/psr_src 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ src/psr_src 
 
 [main] Start of execution
 [main] Input to main is src/psr_src
 [MainController] Unsupported message src/psr_src
 [MainController] Try with --help to display usage, sample command: ./psr_src --help
 [main] End of execution
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ src/psr_src --help
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ src/psr_src --help
 
 [main] Start of execution
 [main] Input to main is --help
@@ -129,8 +129,8 @@ nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build
 [HelpController] 
 [HelpController]        Good luck predicting the computer's next move! :)
 [main] End of execution
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ src/psr_src --play
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ src/psr_src --play
 
 [main] Start of execution
 [main] Input to main is --play
@@ -411,8 +411,8 @@ _____  |   | |   | |   | |  |
 [EnglishOutputter] Tally: You 1 vs Computer 2
 [EnglishOutputter] You didn't win. Better luck next time!
 [main] End of execution
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ src/psr_src --play
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ src/psr_src --play
 
 [main] Start of execution
 [main] Input to main is --play
@@ -963,8 +963,8 @@ _____  |   | |   | |   | |  |
 [EspanolOutputter] Cuenta: Tu 4 vs Computadora 2
 [EspanolOutputter] Tu ganaste en este concurso. Debes estar lleno de suerte!
 [main] End of execution
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ test/psr_test 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ test/psr_test 
 [==========] Running 14 tests from 4 test suites.
 [----------] Global test environment set-up.
 [----------] 5 tests from RandomGeneratorTest
@@ -1010,8 +1010,8 @@ nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build
 [----------] Global test environment tear-down
 [==========] 14 tests from 4 test suites ran. (7 ms total)
 [  PASSED  ] 14 tests.
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ ../tools/GoogleTestResultReader/readgtest test/psr_test --test RandomGene
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ ../tools/GoogleTestResultReader/readgtest test/psr_test --test RandomGene
 [----------] 5 tests from RandomGeneratorTest
 [ RUN      ] RandomGeneratorTest.DecideOnCasesThatShouldBeYes
 [       OK ] RandomGeneratorTest.DecideOnCasesThatShouldBeYes (0 ms)
@@ -1025,5 +1025,5 @@ nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build
 [       OK ] RandomGeneratorTest.NotExceedLimit (6 ms)
 [----------] 5 tests from RandomGeneratorTest (9 ms total)
 
-nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRock/build$ 
+nponcian@nponcian-VirtualBox-Ubuntu:~/Documents/Programs/PaperScissorsRockGame/build$ 
 ~~~
