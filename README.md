@@ -4,7 +4,7 @@ PaperScissorsRockGame
 PaperScissorsRock (PSR) is a hand-game of symbols where you can play versus the computer. Some of the features:
 1. Language support. Currently offers English, Spanish, and Filipino
 2. Option for level of difficulty. Currently offers Easy, Average, and Hard
-    * Technically, this controls the probability of the computer chossing the symbol that beats the user
+    * Technically, this controls the probability of the computer choosing the symbol that beats the user
 3. Randomized nature
     1. Number of games per run are randomized
     2. Computer chosen symbols are randomized
