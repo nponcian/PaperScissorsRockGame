@@ -4,7 +4,7 @@ PaperScissorsRockGame
 PaperScissorsRock is a hand-game of symbols where you can play versus the computer. It is basically a game of luck as the players would need to select a random symbol hoping that the other player would choose the opposite losing symbol. The game is "basic" until you start incorporating your psychic mind-reading abilities against the opponent! Some of the features:
 1. Language support. Currently offers English, Spanish, and Filipino
 2. Option for level of difficulty. Currently offers Easy, Average, and Hard
-    * Technically, this controls the probability of the computer chossing the symbol that beats the user
+    * Technically, this controls the probability of the computer choosing the symbol that beats the user
 3. Randomized nature
     1. Number of games per run are randomized
     2. Computer chosen symbols are randomized
